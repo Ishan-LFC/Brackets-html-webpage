@@ -1,0 +1,197 @@
+body{
+padding    : 0;
+margin     : 0;
+font-family: Helvetica;
+}
+
+#header{
+position: fixed;
+top     : 0;
+left    : 0;
+z-index : 500;
+width   :100%;
+height  :80px;
+background-image  : url('images/wood-bg.png');
+background-repeat: repeat-x;
+}
+
+#header img{
+display: block;
+margin : auto;
+height : 70%;
+padding-top: 15px;
+}
+
+/*= z index allows for image to slider under header /
+/*= #tab-top is an id we assigned /*=
+/*============= top tabs =======*/
+#tabs-top{
+position: fixed;
+top     : 80px;
+left    : 0;
+z-index : 500;
+width   : 100%;
+height  : 40px;
+background-color: darkgreen;
+}
+
+/*==== tab-top hyperlinks style ====*/
+#tabs-top a{
+float   : left;
+display : block;
+width   : 33%;
+height  :35px;
+font-weight : 700;
+color       : white;
+text-align  : center;
+text-decoration : none; /*==== removes lines in hyperlinks ====*/
+padding-top     : 12px;  
+}
+
+/*=== main.home ===*/
+#main-home{
+margin-top: 120px; /*=== leave a space at the top 40px and 80px to align map, map isnt cut off ===*/
+}
+
+/*=== bottom tabs, id that we gave ===*/
+#tabs-bottom{
+position : fixed;
+bottom   : 0; /*=== stuck to the bottom ===*/
+left     : 0; /*=== stuck to the left ===*/
+z-index  : 500; 
+width    : 100%; /*=== full page ===*/
+height   : 40px; /*=== similar to tabs top ===*/
+background-color: forestgreen;
+}
+
+#tabs-bottom a{
+float : left; 
+display : block;
+width : 50%; /*=== different to top tabs, these are two in number, therefore half width of screen ===*/
+height : 35px;
+font-weight : 700;
+color       : white;
+text-align  : center;
+text-decoration : none;
+padding-top     : 12px; /*=== aligns within footer(bottom) ===*/
+}
+
+/*=== Animals.html ===*/
+#main{
+margin-top: 119px;
+background: url('images/map-blur.png');
+background-repeat: repeat-y; /*=== repeat horizontally ===*/
+}
+
+#content{
+padding-top: 1px;
+padding-bottom: 50px;
+}
+
+/*=== info box hyperlink ===*/
+a.info-box{
+text-decoration : none;
+background      : rgba(255 ,225, 255, .8);
+width           : 90%; /*=== spaces on left and right ===*/
+height          : 90px;
+display         : block;
+margin          : auto; /*=== centralised to screen ===*/
+margin-top      : 12px; /*=== gap between info boxes ===*/
+padding         : 1px;
+}
+
+/*=== info box images ===*/
+.info-box img{
+height : 70px;
+margin : 10px;
+float  : left; /*=== left side of box ===*/
+}
+
+.info-box h3{
+padding : 0;
+margin-bottom :0;
+width : 90%;
+color : #572800; /*=== remember dash for colour if in hexidecimal ===*/
+}
+
+.info-box p{
+margin  : 0;
+padding : 0; 
+width   : 90%;
+color   : #131313;
+}
+
+.info-box img.right{ /*=== any image that has a class name of right, appears in hyperlink infobox ===*/
+float      : right;
+margin-top : 25px;
+height :    40px;
+}
+
+/*=== info box style for animals ===*/
+#info-box-full{
+background-color : rgba(255, 255, 255, .8) ;
+width   : 90%;
+display : block;
+margin  : auto;
+margin-top : 12px;
+padding    : 10px;
+}
+
+#info-box-full img{
+width : 100%;
+}
+
+#info-box-full h3{
+text-align : center;
+}
+
+/*=== info box style for weather ===*/
+img.info-box-weather-icon{
+height : 30px;
+width  : 30px! important;
+margin : 10px;
+float  :left;
+}
+
+h1.info-box-weather-icon{
+font-size  : 65px;
+font-weight: 200;
+padding    : 0;
+margin     : 0;
+}
+
+table{
+    width:100%;
+}
+
+td{
+    border-top: 1px solid #131313;
+}
+
+/*=== info box style for feedback ===*/
+
+input{
+width: 100%;
+height: 25px;
+margin : 12px 0;
+border : 1px solid #929292;
+}
+
+textarea{
+width: 100%;
+height :25px;
+margin : 12px 0;
+border : 1px solid #929292;
+}
+
+.button{
+display : block;
+background-color: forestgreen;
+text-decoration : none;
+text-align  : center;
+color       : white;
+font-size   : 16px;
+font-weight : 600;
+margin : 12px 0;
+padding : 8px 0;
+}
